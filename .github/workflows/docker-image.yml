@@ -5,8 +5,11 @@ on:
     paths:
       - 'initfs/**'
       - 'Dockerfile'
+  workflow_dispatch: # 加上这个配置，允许你在网页上手动点击运行按钮
+
 env:
   IMAGE_NAME: rehiy_dailyhot
+  
 jobs:
   build:
     runs-on: ubuntu-latest
