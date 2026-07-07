@@ -14,8 +14,9 @@ cd /var/www
 
 if [ ! -d /var/www/api ]; then
     #wget https://github.com/imsyy/DailyHotApi/archive/refs/heads/master.tar.gz
+    #tar xvf master.tar.gz && mv DailyHotApi-master api-build
     wget https://github.com/willow-god/daily-hot-api/archive/refs/heads/master.tar.gz
-    tar xvf master.tar.gz && mv DailyHotApi-master api-build
+    tar xvf master.tar.gz && mv daily-hot-api-master api-build
     rm -f master.tar.gz
 fi
 
